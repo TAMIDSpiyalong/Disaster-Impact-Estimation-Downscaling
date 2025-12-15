@@ -18,7 +18,7 @@ This project focuses on downscaling disaster impact predictions (DIEP) from aggr
 
 ## Data cleaning
 - All the data entries are paired at the census block group level. 
-- Removed **non-positive** targets `waterDepth`. DIEP already has the capability to estimate 0 household with flood damage at zip code level, which means 0 water depth all census block groups within that zip code. This is the key linkage between DIEP prediction and downscaling.
+- Removed **non-positive** targets `waterDepth`. DIEP can already estimate 0 households with flood damage at the zip code level, which means 0 water depth in all census block groups within that zip code. When the outcome of DIEP is positive, the downscaling model will kick in. This is the key linkage between DIEP prediction and downscaling.
 - Capped upper tail by removing values above the **99th percentile** (threshold ≈ 12.0 inch). Some water depth reports are more than 100 inches which is unrealistic. Final size ≈ **2,857** records after filtering. 
 
 ## Modeling
