@@ -39,7 +39,10 @@ This project focuses on downscaling disaster impact predictions (DIEP) from aggr
 
  ![2](https://github.com/TAMIDSpiyalong/Disaster-Impact-Estimation-Downscaling/blob/main/Neural_Nets_prediction_ground_truth_overlay.png)
 - Figure 3 is the linear regression for comparison. Neural Nets work slightly better than the least square method, e.g., 0.88 MAE for linear regression.
-  
+    - R² Score: 0.0006
+    - MAE: 1.6262
+    - RMSE: 8.1532
+    - Pearson r: 0.0332 (p-value: 0.37861802)
  ![3](https://github.com/TAMIDSpiyalong/Disaster-Impact-Estimation-Downscaling/blob/main/linear_regression.png)
 ## Predicted vs Actual Visualization
 
