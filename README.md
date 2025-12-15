@@ -22,7 +22,10 @@ This project focuses on downscaling disaster impact predictions (DIEP) from aggr
 - Capped upper tail by removing values above the **99th percentile** (threshold ≈ 12.0 inch). Some water depth reports are more than 100 inches which is unrealistic. Final size ≈ **2,857** records after filtering. 
 
 ## Modeling
-- **Neural net**: Feedforward NN (hidden_dim=256) with ReLU; trained with **Adam (lr=1e-4)** and **L1 loss**; **early stopping** with patience=10 across a max of 20,000 epochs; best weights restored. 
+- **Neural net**: Fully connected feedforward neural network with ReLU as shown in the figure below.
+- **Input and Output** The input vector contain the variables abovementioned. More importantly, this neural net desgin is to leave space in the input vector x so that the social media input and be appened to x. The details of this addition is in progress. 
+* **loss** the absolute loss 'L1Loss' in PyTorch work better then MSE.
+*  **early stopping** with patience=10 across a max of 20,000 epochs; best weights restored. 
 ![1](https://github.com/TAMIDSpiyalong/Disaster-Impact-Estimation-Downscaling/blob/main/NN.png)
 
 ## Results
