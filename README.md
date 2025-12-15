@@ -33,16 +33,4 @@ This project focuses on downscaling disaster impact predictions (DIEP) from aggr
 
 > The diagonal “perfect fit” line is overlaid; points cluster near the line with notable spread. Figure exported in the notebook as `predicted_vs_actual_water_depth.png`. [1](https://tamucs-my.sharepoint.com/personal/piyalong_tamu_edu)%20-%20JupyterLab.pdf)
 
-## Quickstart
-
-```bash
-# Python 3.10+ recommended
-python -m venv .venv
-source .venv/bin/activate               # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-
-# Put harvey_observed_waterDepth.csv under data/
-python src/train.py --data data/harvey_observed_waterDepth.csv \
-                    --hidden-dim 256 --lr 1e-4 --patience 10 \
-                    --remove-upper-quantile 0.99 --remove-nonpositive
 
