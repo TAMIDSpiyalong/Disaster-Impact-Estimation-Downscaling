@@ -2,8 +2,7 @@
 # DIEP Water Depth Downscaling (work in progress)
 
 ## Introduction
-This project focuses on downscaling disaster impact predictions (DIEP) from aggregated levels (e.g., zip codes) to finer spatial units by weather data and social media input. Building on prior work that demonstrated the effectiveness of neural networks for predicting FEMA-defined flood damage categories using geolocated social media, this effort aims to enhance spatial resolution and predictive accuracy. The approach leverages historical storm datasets—including Hurricanes Harvey, Imelda, and Beryl—alongside climate variables (precipitation, wind speed, elevation) and inundation data. 
-By applying deep learning architectures and statistical downscaling methods, the project seeks to bridge the gap between coarse-scale predictions and localized impact assessments. The NLP processed social media will be integrated with the current model at zip code level for census block group level downscaling. Together, the downscaling of DIEP will enable real-time, high-resolution disaster impact estimation, supporting first responders, policymakers, and community planners in deploying resources more effectively. 
+This project focuses on downscaling disaster impact predictions (DIEP) from aggregated levels (e.g., zip codes) to finer spatial units (e.g., census block groups) by weather data and social media input. Building on prior work that demonstrated the effectiveness of neural networks for predicting FEMA-defined flood damage categories using geolocated social media, this effort aims to enhance spatial resolution and predictive accuracy. The approach leverages historical storm datasets—including Hurricanes Harvey, Imelda, and Beryl—alongside climate variables (precipitation, wind speed, elevation) and inundation data. 
 
 ## Data Collection
 - Source file: `“Hurricane”_observed_waterDepth.csv`.
