@@ -13,7 +13,7 @@ This project focuses on downscaling disaster impact predictions (DIEP) from aggr
 - `Hurricane_CERA`
 - `Elevation`  
 - `waterDepth` Water depth data is a small integer in inch collected from OpenFEMA dataset. The definition is the depth of flood water in inches. Note: there are instances where measurements were provided in feet. This water depth has zip code, census tract, census block, and census block group information.
-- Dataset available at DOI: https://doi.org/10.7266/n90stx2y.
+- Dataset available at DOI: https://doi.org/10.7266/n90stx2y
 
 
 ## Data cleaning
