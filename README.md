@@ -29,8 +29,7 @@ This project focuses on downscaling disaster impact predictions (DIEP) from aggr
 - FNN: **R² = 0.1621**, **MAE = 0.7349**, **RMSE = 1.4321**, **Pearson r = 0.4315 (p ≈ 2.41e-27)**. [1](https://tamucs-my.sharepoint.com/personal/piyalong_tamu_edu)%20-%20JupyterLab.pdf)
 - Linear: **R² = 0.0180**, **MAE = 0.8935**, **RMSE = 1.5504**, **Pearson r ≈ 0.1623**. [1](https://tamucs-my.sharepoint.com/personal/piyalong_tamu_edu)%20-%20JupyterLab.pdf)
 
-!Predicted vs Actual
+## Predicted vs Actual Visualization
 
-> The diagonal “perfect fit” line is overlaid; points cluster near the line with notable spread. Figure exported in the notebook as `predicted_vs_actual_water_depth.png`. [1](https://tamucs-my.sharepoint.com/personal/piyalong_tamu_edu)%20-%20JupyterLab.pdf)
 
 
