@@ -1,11 +1,13 @@
 
 # DIEP Water Depth Downscaling (work in progress)
 
-A compact pipeline to predict block-group water depth from event- and terrain-related features using PyTorch, with baselines from scikit-learn. Includes data cleaning, feature/target scaling, an FNN with residual blocks, early stopping, and reproducible evaluation.
+## Introduction
+This project focuses on downscaling disaster impact predictions (DIEP) from aggregated levels (e.g., zip codes) to finer spatial units by weather data and social media input. Building on prior work that demonstrated the effectiveness of neural networks for predicting FEMA-defined flood damage categories using geolocated social media, this effort aims to enhance spatial resolution and predictive accuracy. The approach leverages historical storm datasets—including Hurricanes Harvey, Imelda, and Beryl—alongside climate variables (precipitation, wind speed, elevation) and inundation data. 
+By applying deep learning architectures and statistical downscaling methods, the project seeks to bridge the gap between coarse-scale predictions and localized impact assessments. The NLP processed social media will be integrated with the current model at zip code level for census block group level downscaling. Together, the downscaling of DIEP will enable real-time, high-resolution disaster impact estimation, supporting first responders, policymakers, and community planners in deploying resources more effectively. 
 
 ## Dataset
-- Source file: `data/harvey_observed_waterDepth.csv` (local, not committed).
-- Key features used in the notebook: `Harvey_Totals`, `harvey_Wind`, `harvey_TMax`, `harvey_TMin`, `harvey_Pre`, `harvey_CERA`, `Elevation` and target `waterDepth`. [1](https://tamucs-my.sharepoint.com/personal/piyalong_tamu_edu)%20-%20JupyterLab.pdf)
+- Source file: `“Hurricane”_observed_waterDepth.csv`.
+- Key features used in the notebook: `Hurricane_Totals`, `Hurricane_Wind`, `Hurricane_TMax`, `Hurricane_TMin`, `Hurricane_Pre`, `Hurricane_CERA`, `Elevation` and target `waterDepth`. 
 
 ## Data cleaning
 - Removed **non-positive** targets and capped upper tail by removing values above the **99th percentile** (threshold ≈ 12.0). Final size ≈ **2,857** records after filtering. [1](https://tamucs-my.sharepoint.com/personal/piyalong_tamu_edu)%20-%20JupyterLab.pdf)
