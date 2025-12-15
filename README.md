@@ -27,12 +27,12 @@ This project focuses on downscaling disaster impact predictions (DIEP) from aggr
 
 ## Results
 - Figure below shows the best neural network performance with a 0.74 MAE and Pearson R of 0.4 between prediction and ground truth lists, which are the FIMA water depth in inches: 
-   - R² Score: 0.1304
-<br/>  MAE (Mean Absolute Error): 0.7401
-<br/>  RMSE (Root Mean Squared Error): 1.4590
-<br/>  Mean Error: -0.2667
-<br/>  Std of Error: 1.4344
-<br/>  Pearson r: 0.4022 (p-value: 1.2013e-23)
+   -  R² Score: 0.1304
+   -   MAE (Mean Absolute Error): 0.7401
+   -   RMSE (Root Mean Squared Error): 1.4590
+   -   Mean Error: -0.2667
+   -   Std of Error: 1.4344
+   -   Pearson r: 0.4022 (p-value: 1.2013e-23)
  ![1](https://github.com/TAMIDSpiyalong/Disaster-Impact-Estimation-Downscaling/blob/main/predicted_vs_actual_water_depth.png)
 
 - Figure 2 shows the sorted prediction and ground truth. I believe we can see a weak prediction.
