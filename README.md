@@ -1,5 +1,5 @@
 
-# Water Depth Prediction (Harvey)
+# DIEP Water Depth Downscaling (work in progress)
 
 A compact pipeline to predict block-group water depth from event- and terrain-related features using PyTorch, with baselines from scikit-learn. Includes data cleaning, feature/target scaling, an FNN with residual blocks, early stopping, and reproducible evaluation.
 
