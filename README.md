@@ -23,7 +23,7 @@ This project focuses on downscaling disaster impact predictions (DIEP) from aggr
 
 ## Modeling
 - **Neural net**: Feedforward NN (hidden_dim=256) with ReLU; trained with **Adam (lr=1e-4)** and **L1 loss**; **early stopping** with patience=10 across a max of 20,000 epochs; best weights restored. 
-- **Baseline**: Linear Regression fitted on the same split. [1](https://tamucs-my.sharepoint.com/personal/piyalong_tamu_edu)%20-%20JupyterLab.pdf)
+[1](https://github.com/TAMIDSpiyalong/Disaster-Impact-Estimation-Downscaling/blob/main/NN.png)
 
 ## Results
 - Figure below shows the best neural network performance with a 0.74 MAE and Pearson R of 0.4 between prediction and ground truth lists, which are the FIMA water depth in inches: 
