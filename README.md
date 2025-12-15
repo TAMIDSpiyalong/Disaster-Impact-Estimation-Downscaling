@@ -22,11 +22,11 @@ This project focuses on downscaling disaster impact predictions (DIEP) from aggr
 - Capped upper tail by removing values above the **99th percentile** (threshold ≈ 12.0 inch). Some water depth reports are more than 100 inches which is unrealistic. Final size ≈ **2,857** records after filtering. 
 
 ## Modeling
-- **Neural net**: Feedforward NN (hidden_dim=256) with ReLU; trained with **Adam (lr=1e-4)** and **L1 loss**; **early stopping** with patience=10 across a max of 20,000 epochs; best weights restored.![1](https://github.com/TAMIDSpiyalong/Disaster-Impact-Estimation-Downscaling/blob/main/predicted_vs_actual_water_depth.png)
+- **Neural net**: Feedforward NN (hidden_dim=256) with ReLU; trained with **Adam (lr=1e-4)** and **L1 loss**; **early stopping** with patience=10 across a max of 20,000 epochs; best weights restored. 
 - **Baseline**: Linear Regression fitted on the same split. [1](https://tamucs-my.sharepoint.com/personal/piyalong_tamu_edu)%20-%20JupyterLab.pdf)
 
 ## Results (Test set)
-- FNN: **R² = 0.1621**, **MAE = 0.7349**, **RMSE = 1.4321**, **Pearson r = 0.4315 (p ≈ 2.41e-27)**. [1](https://tamucs-my.sharepoint.com/personal/piyalong_tamu_edu)%20-%20JupyterLab.pdf)
+- Figure 1 shows the best neural network performance with a 0.74 MAE and Peason R of 0.4 between prediction and ground truth lists, which are the FIMA water depth in inch. Figure 2 shows the sorted prediction and ground truth. I believe we can see a weak prediction. Figure 3 is the linear regression for comparison. Neural Nets work slightly better than the least square, e.g., 0.88 MAE for linear regression.  ![1](https://github.com/TAMIDSpiyalong/Disaster-Impact-Estimation-Downscaling/blob/main/predicted_vs_actual_water_depth.png)
 - Linear: **R² = 0.0180**, **MAE = 0.8935**, **RMSE = 1.5504**, **Pearson r ≈ 0.1623**. [1](https://tamucs-my.sharepoint.com/personal/piyalong_tamu_edu)%20-%20JupyterLab.pdf)
 
 ## Predicted vs Actual Visualization
