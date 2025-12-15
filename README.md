@@ -47,6 +47,5 @@ This project focuses on downscaling disaster impact predictions (DIEP) from aggr
     - Pearson r: 0.1623 (p-value: 9.64208475e-05)
  ![3](https://github.com/TAMIDSpiyalong/Disaster-Impact-Estimation-Downscaling/blob/main/linear_regression.png)
 ## Predicted vs Actual Visualization
-
-
+Using the neural network, the testing data water depth values are predicted. The figure below shows a side-by-side comparison with the ground truth. 
 
