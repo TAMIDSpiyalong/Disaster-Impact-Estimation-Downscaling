@@ -27,8 +27,8 @@ This project focuses on downscaling disaster impact predictions (DIEP) from aggr
 
 ## Results
 - Figure below shows the best neural network performance with a 0.74 MAE and Peason R of 0.4 between prediction and ground truth lists, which are the FIMA water depth in inch. Figure 2 shows the sorted prediction and ground truth. I believe we can see a weak prediction. Figure 3 is the linear regression for comparison. Neural Nets work slightly better than the least square, e.g., 0.88 MAE for linear regression.
-- R² Score: 0.1304
-MAE (Mean Absolute Error): 0.7401
+-- R² Score: 0.1304
+-- MAE (Mean Absolute Error): 0.7401
 RMSE (Root Mean Squared Error): 1.4590
 Mean Error: -0.2667
 Std of Error: 1.4344
