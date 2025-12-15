@@ -12,7 +12,7 @@ This project focuses on downscaling disaster impact predictions (DIEP) from aggr
 - `Hurricane_Wind`, `Hurricane_TMax`, `Hurricane_TMin`, `Hurricane_Pre` Wind speed probabilities were obtained from the National Hurricane Center GIS Archive.  Data downloaded was in a 50-knot format for each storm date period. Files were first converted from KMZ form to ESRI polygon layers in ArcPro. These polygons were then converted to raster, values were reclassified to ensure areas with no values had a value of “0”, and the Cell Statistics tool was used to calculate the maximum, mean, and sum wind speed value for each cell over the duration of the storm event. Inundation data was sourced from the Louisiana State University Coastal Emergency Risks Assessment database. Measurements represented the maximum water levels in feet above ground as referenced to mean sea level (MSL). Each storm had one raster representing maximum level throughout the duration of the event.
 - `Hurricane_CERA`
 - `Elevation`  
--`waterDepth` Water depth data is a small integer in inch collected from OpenFEMA dataset. The definition is the depth of flood water in inches. Note: there are instances where measurements were provided in feet. This water depth has zip code, census tract, census block, and census block group information.
+- `waterDepth` Water depth data is a small integer in inch collected from OpenFEMA dataset. The definition is the depth of flood water in inches. Note: there are instances where measurements were provided in feet. This water depth has zip code, census tract, census block, and census block group information.
 - Dataset available at DOI: https://doi.org/10.7266/n90stx2y.
 
 
