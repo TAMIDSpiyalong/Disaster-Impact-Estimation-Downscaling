@@ -17,7 +17,8 @@ This project focuses on downscaling disaster impact predictions (DIEP) from aggr
 
 
 ## Data cleaning
-- Removed **non-positive** targets and capped upper tail by removing values above the **99th percentile** (threshold ≈ 12.0). Final size ≈ **2,857** records after filtering. [1](https://tamucs-my.sharepoint.com/personal/piyalong_tamu_edu)%20-%20JupyterLab.pdf)
+- All the data entries are paired at the census block group level. 
+-  Removed **non-positive** targets `waterDepth` and capped upper tail by removing values above the **99th percentile** (threshold ≈ 12.0 inch). Final size ≈ **2,857** records after filtering. 
 
 ## Modeling
 - **Neural net**: Feedforward NN (hidden_dim=256) with ReLU; trained with **Adam (lr=1e-4)** and **L1 loss**; **early stopping** with patience=10 across a max of 20,000 epochs; best weights restored. [1](https://tamucs-my.sharepoint.com/personal/piyalong_tamu_edu)%20-%20JupyterLab.pdf)
