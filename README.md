@@ -38,7 +38,7 @@ This project focuses on downscaling disaster impact predictions (DIEP) from aggr
    -   Pearson r: 0.4022 (p-value: 1.2013e-23)
  ![1](https://github.com/TAMIDSpiyalong/Disaster-Impact-Estimation-Downscaling/blob/main/predicted_vs_actual_water_depth.png)
 
-- Figure 2 shows the sorted prediction and ground truth. I believe we can see a weak prediction.
+- Figure 2 shows the sorted prediction and ground truth from the 20% testing dataset. There is a weak prediction power at the higher tail of the ground truth distribution.
 
  ![2](https://github.com/TAMIDSpiyalong/Disaster-Impact-Estimation-Downscaling/blob/main/Neural_Nets_prediction_ground_truth_overlay.png)
 - Figure 3 is the linear regression for comparison. Neural Nets work slightly better than the least square method, e.g., 0.88 MAE for linear regression.
