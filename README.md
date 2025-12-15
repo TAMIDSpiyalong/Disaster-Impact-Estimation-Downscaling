@@ -24,7 +24,7 @@ This project focuses on downscaling disaster impact predictions (DIEP) from aggr
 
 ## Modeling
 - **Neural net**: Fully connected feedforward neural network as shown in the figure below. This is a simple regression problem. Adding residual block does not improve the performance. 
-- **Input and Output**: All the input output values are normalized vector containing the variables abovementioned. More importantly, this desgin leaves room for the social media input (binary or extracted features) to be appended to $\vec{x}$. The details of this addition is in progress.
+- **Input and Output**: All the input output values are normalized vector containing the variables abovementioned. More importantly, this desgin leaves room for the social media input (binary or extracted features) to be appended to $\vec{x}$. **The details of this addition is in progress**.
 - **Loss Function**: the absolute loss 'L1Loss' in PyTorch work better than MSE loss.
 ![1](https://github.com/TAMIDSpiyalong/Disaster-Impact-Estimation-Downscaling/blob/main/NN.png)
 
