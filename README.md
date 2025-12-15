@@ -41,7 +41,7 @@ This project focuses on downscaling disaster impact predictions (DIEP) from aggr
     - R² Score: 0.0180
     - MAE: 0.8935
     - RMSE: 1.5504
-    - Pearson r: [0.16231586] (p-value: [9.64208475e-05])
+    - Pearson r: 0.1623 (p-value: 9.64208475e-05)
  ![3](https://github.com/TAMIDSpiyalong/Disaster-Impact-Estimation-Downscaling/blob/main/linear_regression.png)
 ## Predicted vs Actual Visualization
 
