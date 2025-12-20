@@ -49,7 +49,9 @@ This project focuses on downscaling disaster impact predictions (DIEP) from aggr
 ## Predicted vs Actual Visualization
 Using the neural network, the testing data water depth values are predicted. The figure below shows a side-by-side comparison with the ground truth. 
 
-![4](https://github.com/TAMIDSpiyalong/Disaster-Impact-Estimation-Downscaling/blob/main/download.png)
+![4](waterDepth_blockgroup_groundtruth.png)
+
+![5](waterDepth_blockgroup_predicted.png)
 
 ## Conclustion
 This work demonstrates the feasibility of downscaling disaster impact predictions from zip code to census block group level using a feedforward neural network and environmental features such as precipitation, wind speed, elevation, and inundation data. The model achieves moderate predictive performance (MAE ≈ 0.74, Pearson r ≈ 0.40), indicating that weather and elevation alone provide useful signals for estimating localized water depth. While the current results show improvement over linear regression, prediction accuracy remains limited, especially for extreme flood depths. Incorporating social media-derived features and additional covariates is expected to enhance performance and capture community-level impacts more effectively. 
